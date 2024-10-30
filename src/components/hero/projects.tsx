@@ -2,9 +2,10 @@ import * as motion from "framer-motion/client";
 
 export default function Projects() {
   return (
-    <div className="absolute top-[25rem] -z-50 opacity-90">
-      <div className="max-w-screen relative overflow-hidden">
-        <div className="absolute pointer-events-none inset-0 z-50 flex items-center justify-center  bg-[#1A1A1A] bg-dot [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
+    <div className="absolute  top-[25rem] -z-50 opacity-50">
+      <div className="max-w-full relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-tr from-black from-5% via-black/80 via-50% to-transparent to-95% z-10" />
+        {/* <div className="absolute pointer-events-none inset-0 z-50 flex items-center justify-center  bg-[#1A1A1A] bg-dot [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div> */}
         <div className="perspective-1000">
           <div className="transform p-4 scale-[1.5] relative left-[35rem] rotate-x-[40deg] rotate-y-[20deg] -rotate-z-[30deg]">
             <div className="flex space-x-4">
