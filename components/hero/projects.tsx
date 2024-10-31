@@ -123,7 +123,7 @@ export const products = [
   {
     title: "Pixel Perfect",
     link: "https://app.pixelperfect.quest",
-    thumbnai:
+    thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
 
