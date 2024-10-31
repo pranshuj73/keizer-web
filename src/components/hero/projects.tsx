@@ -89,7 +89,13 @@ export default function Projects() {
 	);
 }
 
-export const products = [
+interface Products {
+	title: string;
+	link: string;
+	thumbnail: string;
+}
+
+export const products: Products[] = [
 	{
 		title: "Moonbeam",
 		link: "https://gomoonbeam.com",
