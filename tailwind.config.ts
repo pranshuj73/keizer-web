@@ -1,19 +1,19 @@
 import type { Config } from "tailwindcss";
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       perspective: {
         "1000": "1000px",
       },
-      rotateY: {
+      rotate: {
         "20": "20deg",
       },
       animation: {
@@ -107,10 +107,10 @@ const config: Config = {
   plugins: [
     require("@xpd/tailwind-3dtransforms"),
     require("tailwindcss-animate"),
-    plugin(function ({ matchUtilities, theme }) {
+    plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
-          "animate-ease": (value) => ({
+          "animate-ease": (value: string) => ({
             animationTimingFunction: value,
           }),
         },
