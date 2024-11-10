@@ -7,21 +7,25 @@ body {
   background-color: rgb(26, 26, 26);
 }
 
-.a {
-  transition: all 0.45s;
-}
-
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: black;
+  width: 0px;
 }
 
-::-webkit-slider-thumb {
+::selection {
   background-color: white;
+  color: black;
 }
-
+.dot-grid {
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+    linear-gradient(to bottom, #80808012 1px, transparent 1px);
+  background-size: 24px 24px;
+}
 @layer base {
   :root {
+    color: black;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -49,6 +53,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
+    color: white;
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -74,33 +79,4 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-.glow-btn:hover {
-  box-shadow:
-    0 56px 280.627197265625px 0 rgba(255, 255, 255, 0.77), 0 21px 160.3583984375px 0 rgba(
-      255,
-      255,
-      255,
-      0.66
-    ), 0 12px 93.54239654541016px 0 rgba(255, 255, 255, 0.2), 0 9px 46.77119827270508px 0 rgba(
-      255,
-      255,
-      255,
-      0.68
-    ), 0 4px 13.363200187683105px 0 #fff, 0 0 6.681600093841553px 0 rgba(
-      255,
-      255,
-      255,
-      0.18
-    );
 }

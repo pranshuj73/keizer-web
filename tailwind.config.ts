@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "dm-mono": ["var(--dm-mono)"],
+        "space-grotesk": ["var(--space-grotesk)"],
+      },
       perspective: {
         "1000": "1000px",
       },
@@ -58,6 +62,7 @@ const config: Config = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
