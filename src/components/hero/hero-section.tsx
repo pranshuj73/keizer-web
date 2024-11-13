@@ -65,6 +65,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <div className="h-[100vh]" />
       </div>
     </section>
   );
