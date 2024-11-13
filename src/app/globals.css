@@ -12,9 +12,10 @@ body {
 }
 
 ::selection {
-  background-color: white;
-  color: black;
+  background-color: #2d2dc3;
+  color: white;
 }
+
 .dot-grid {
   inset: 0;
   height: 100%;

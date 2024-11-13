@@ -7,7 +7,7 @@ import { space_Grotesk } from "~/src/components/ui/font";
 const Navbar = () => {
   const links = ["Our Projects", "Services", "Reviews", "About Us", "Contact"];
   return (
-    <nav className="w-full text-white bg-black/50  fixed z-10 top-0 md:h-[130px] h-[80px] flex justify-between items-center lg:px-[40px] px-[20px]">
+    <nav className="w-full  text-white bg-black/50  fixed z-50 top-0 md:h-[130px] h-[80px] flex justify-between items-center lg:px-[40px] px-[20px]">
       <div className="max-w-[1440px] w-full flex justify-between items-center mx-auto">
         <div className="flex items-center gap-[5px]">
           <AlignJustify className="md:hidden block" fontWeight={900} />
@@ -34,7 +34,7 @@ const Navbar = () => {
             })}
           </ul>
           <Button
-            className={`${space_Grotesk.className} w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]`}
+            className={`${space_Grotesk.className} bg-white text-black w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]`}
           >
             Let's talk
           </Button>
