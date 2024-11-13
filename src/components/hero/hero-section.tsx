@@ -5,8 +5,11 @@ import { dM_Mono } from "../ui/font";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="w-full bg-[#161619]">
-      <div className="relative overflow-hidden h-auto max-w-[1536px] mx-auto">
+    <section
+      id="hero"
+      className="h-auto pb-[100px] overflow-x-hidden relative w-full bg-primary"
+    >
+      <div className="mx-auto max-w-[1536px]">
         <img src="/assets/decoration.svg" className="absolute left-[220px]" />
         <div className="dot-grid " />
         <div className="pt-[238px] ">
