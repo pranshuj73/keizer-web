@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavLink from "../shared/nav-link";
 import { Button } from "~/src/components/ui/button";
@@ -5,9 +8,28 @@ import { AlignJustify } from "lucide-react";
 import { space_Grotesk } from "~/src/components/ui/font";
 
 const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
   const links = ["Our Projects", "Services", "Reviews", "About Us", "Contact"];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <nav className="w-full  text-white bg-black/50  fixed z-50 top-0 md:h-[130px] h-[80px] flex justify-between items-center lg:px-[40px] px-[20px]">
+    <nav
+      className={`w-full text-white bg-black/50 fixed z-50 top-0 flex justify-between items-center lg:px-[40px] px-[20px] transition-a duration-300 ease-in-out ${
+        visible ? "md:h-[130px] h-[80px]" : "md:h-[100px] h-[80px] "
+      }`}
+    >
       <div className="max-w-[1440px] w-full flex justify-between items-center mx-auto">
         <div className="flex items-center gap-[5px]">
           <AlignJustify className="md:hidden block" fontWeight={900} />
