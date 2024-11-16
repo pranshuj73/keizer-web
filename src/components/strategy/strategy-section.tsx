@@ -50,7 +50,7 @@ const StrategySection = () => {
   ];
 
   return (
-    <section className="h-[200vh] relative bg-[#161619]">
+    <section className="md:h-[200vh] h-auto relative bg-[#161619]">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -59,9 +59,9 @@ const StrategySection = () => {
           backgroundSize: "13px 13px",
         }}
       />
-      <div className="max-w-[1536px] relative mx-auto px-[100px] py-[150px] flex justify-between">
+      <div className="max-w-[1536px] relative mx-auto md:px-[100px] px-[24px] md:py-[150px] py-[60px] flex lg:flex-row flex-col justify-between">
         <img
-          className="absolute z-[0] top-[68%] left-[118px] scale-[1.05] -translate-y-1/2 "
+          className="absolute z-[0] top-[68%] lg:block hidden left-[118px] scale-[1.05] -translate-y-1/2 "
           src="/assets/decoration-text.svg"
         />
         <div>
@@ -69,13 +69,13 @@ const StrategySection = () => {
             <p className="uppercase text-[16px] font-semibold pb-[10px]">
               Team keizer
             </p>
-            <h2 className="text-[54px] mt-[24px] font-bold leading-[100%]">
-              We’re a team of
-              <br />
-              creatives who are
-              <br />
-              excited about
-              <br />
+            <h2 className="md:text-[54px] text-[32px] mt-[24px] font-bold leading-[100%]">
+              We’re a team of&nbsp;
+              <br className="md:block hidden" />
+              creatives who are&nbsp;
+              <br className="md:block hidden" />
+              excited about&nbsp;
+              <br className="md:block hidden" />
               unique ideas.
             </h2>
           </div>
@@ -89,8 +89,8 @@ const StrategySection = () => {
             </Link>
           </Button>
         </div>
-        <div className="lg:w-[600px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px] justify-items-center">
+        <div className="lg:w-[600px] lg:pt-[0px] pt-[50px] w-full ">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[40px] gap-[30px] w-fit  ">
             {strategies.map((strategy, index) => (
               <StrategyCard
                 key={index}

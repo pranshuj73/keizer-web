@@ -17,15 +17,15 @@ const StrategyCard = ({
   linkHref = "#",
 }: StrategyCardProps) => {
   return (
-    <div className="relative w-[284px] mx-auto flex flex-col justify-between">
-      <h2 className="text-white/80 text-[14px] pb-[20px] font-medium border-b border-neutral-600 tracking-wide">
+    <div className="relative md:w-[284px] w-full mx-auto flex flex-col justify-between">
+      <span className="text-white/80 text-[14px] pb-[20px] font-medium border-b border-neutral-600 tracking-wide">
         {number}. STRATEGY
-      </h2>
+      </span>
 
       <div className="space-y-6 pt-[20px]">
-        <h3 className="text-white text-[25px] font-bold leading-tight">
+        <h2 className="text-white md:text-[25px] text-[20px] font-bold leading-tight">
           {title}
-        </h3>
+        </h2>
 
         <p className="text-white/80 text-[16px] leading-relaxed max-w-2xl">
           {description}
