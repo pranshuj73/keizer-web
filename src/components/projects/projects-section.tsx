@@ -16,49 +16,49 @@ const ProjectSection = () => {
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-2 row-span-2",
+      className: "md:col-span-2 md:row-span-2",
     },
     {
       title: "Statistics Mobile App",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-1 row-span-2",
+      className: "md:col-span-1 md:row-span-2",
     },
     {
       title: "Plastic Credit Card",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-1 row-span-1",
+      className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Diseño de Moda",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-1 row-span-1",
+      className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Dinámica Lifestyle",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-1 row-span-1",
+      className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Captive Bright Utensil",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-1 row-span-1",
+      className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Fitness Lifestyle Mobile App",
       categories: ["Stories", "Branding"],
       image: "/project-1.png",
       href: "#",
-      className: "col-span-2 row-span-1",
+      className: "md:col-span-2 md:row-span-1",
     },
   ];
 
@@ -94,14 +94,12 @@ const ProjectSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid pt-[60px] grid-cols-1 md:gap-[40px] gap-[24px] py-8 md:grid-cols-3">
+        <div className="grid pt-[60px] grid-cols-1 md:grid-cols-3 gap-[40px] py-8">
           {projects.map((project, index) => (
             <Link
               key={project.title}
               href={project.href}
-              className={`group relative h-[240px] sm:h-[300px] md:h-[422px] overflow-hidden rounded-[5px] ${
-                project.className ? `md:${project.className}` : ""
-              }`}
+              className={`group relative  h-[220px] sm:h-[280px] md:h-[422px] overflow-hidden rounded-[5px] ${project.className}`}
             >
               <Image
                 src={`/assets/project-${index + 1}.png`}
@@ -113,7 +111,7 @@ const ProjectSection = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 h-[50%] opacity-60 w-full bg-gradient-to-t from-black to-transparent" />
 
-              <div className="absolute inset-0 z-20 flex flex-col justify-end md:p-[40px] p-[20px]">
+              <div className="absolute inset-0 z-20 flex flex-col justify-end p-[20px] md:p-[40px]">
                 <h3 className="text-xl font-medium text-zinc-100 md:text-2xl">
                   {project.title}
                 </h3>
