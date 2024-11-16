@@ -50,7 +50,7 @@ const StrategySection = () => {
   ];
 
   return (
-    <section className="md:h-[200vh] h-auto relative bg-[#161619]">
+    <section className=" h-auto relative bg-[#161619]">
       <div
         className="absolute inset-0 opacity-10"
         style={{
