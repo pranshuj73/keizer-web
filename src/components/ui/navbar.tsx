@@ -56,7 +56,7 @@ const Navbar = () => {
             })}
           </ul>
           <Button
-            className={`${space_Grotesk.className} bg-white text-black w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]`}
+            className={`${space_Grotesk.className} bg-white hover:bg-neutral-300 text-black w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]`}
           >
             Let's talk
           </Button>
