@@ -10,7 +10,7 @@ import { space_Grotesk } from "~/src/components/ui/font";
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const links = ["Our Projects", "Services", "Reviews", "About Us", "Contact"];
+  const links = ["Our Projects", "Services", "News", "About Us", "Contact"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,20 +26,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full text-white bg-black/50 fixed z-50 top-0 flex justify-between items-center lg:px-[40px] px-[20px] transition-a duration-300 ease-in-out ${
+      className={`w-full text-white bg-black/50 fixed z-[100] top-0 flex justify-between items-center lg:px-[40px] px-[20px] transition-a duration-300 ease-in-out ${
         visible ? "md:h-[130px] h-[80px]" : "md:h-[100px] h-[80px] "
       }`}
     >
       <div className="max-w-[1440px] w-full flex justify-between items-center mx-auto">
         <div className="flex items-center gap-[5px]">
           <AlignJustify className="md:hidden block" fontWeight={900} />
-          <Image
-            src="/assets/logos/keizer-logo-name.svg"
-            width={175}
-            height={79.82}
-            alt="keizer-brand-logo"
-            className="md:w-[175px] md:h-[79.82px] sm:w-[135px] sm:h-[58.856px] w-[80.4px] h-[49.83px]"
-          />
+          <a href="#">
+            <Image
+              src="/assets/logos/keizer-logo-name.svg"
+              width={175}
+              height={79.82}
+              alt="keizer-brand-logo"
+              className="md:w-[175px] md:h-[79.82px] sm:w-[135px] sm:h-[58.856px] w-[80.4px] h-[49.83px]"
+            />
+          </a>
         </div>
         <div className="flex items-center lg:gap-[75px] gap-[40px]">
           <ul className="md:flex hidden lg:gap-[36px] gap-[30px] md:text-[16px] text-[14px]">

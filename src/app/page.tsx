@@ -5,6 +5,8 @@ import StrategySection from "../components/strategy/strategy-section";
 import NewsSection from "../components/news/news-section";
 import AboutSection from "../components/about/about-section";
 import ContactSection from "../components/contact/contact-section";
+import NewsLetter from "../components/newsletter/news-letter-section";
+import FooterSection from "../components/footer/footer-section";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <NewsSection />
       <AboutSection />
       <ContactSection />
+      <NewsLetter />
+      <FooterSection />
     </main>
   );
 }
