@@ -6,7 +6,7 @@ const dM_Mono = DM_Mono({
   weight: ["300", "400", "500"],
 });
 
-const  NavLink = ({
+const NavLink = ({
   linkName,
   index,
   className,

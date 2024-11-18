@@ -2,7 +2,10 @@ import { UserRound } from "lucide-react";
 
 const NewsLetter = () => {
   return (
-    <section id="newsLetter" className="md:px-[100px] md:pt-[100px] pt-[60px] px-[24px] ">
+    <section
+      id="newsLetter"
+      className="md:px-[100px] md:pt-[100px] pt-[60px] px-[24px] "
+    >
       <div className="flex border-b border-neutral-600 md:pb-[100px] pb-[60px] md:flex-row flex-col gap-[24px] lg:items-center items-start justify-between max-w-[1536px] mx-auto">
         <p className="text-[24px] leading-[100%] font-bold">
           Join our newsletter to keep{" "}

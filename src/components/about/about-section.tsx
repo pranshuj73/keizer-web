@@ -19,7 +19,10 @@ const AboutSection = () => {
             src="/assets/keizer-grid.svg"
           />
         </header>
-        <img className="w-full mt-[70px] xl:hidden block" src="/assets/keizer-grid.svg" />
+        <img
+          className="w-full mt-[70px] xl:hidden block"
+          src="/assets/keizer-grid.svg"
+        />
         <div className="xl:mt-[200px] mt-[33px] md:text-[20px] text-[15px]">
           <p>
             We help your startup grow by leveraging smart marketing strategies
