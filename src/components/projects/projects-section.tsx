@@ -67,7 +67,7 @@ const ProjectSection = () => {
   */
 
   return (
-    <section className="bg-white text-black project-keizer">
+    <section id="ourprojects" className="bg-white text-black project-keizer">
       <div className="md:p-[100px] px-[24px] py-[60px] mx-auto max-w-[1536px] ">
         <div className=" tracking-[-1%] flex md:flex-row flex-col justify-between md:items-center">
           <div>

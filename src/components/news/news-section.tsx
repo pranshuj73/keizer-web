@@ -10,7 +10,7 @@ const NewsSection = () => {
             <span className="text-[15px] font-bold uppercase">News</span>
             <h2 className="md:text-[54px] text-[32px] font-semibold">
               News archive.
-            </h2>
+           </h2>
           </div>
           <Link href="#" className="items-center md:flex hidden gap-[10px]">
             Show all post <ArrowRight />
