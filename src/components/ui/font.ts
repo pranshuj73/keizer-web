@@ -10,4 +10,3 @@ export const dM_Mono = DM_Mono({
   weight: ["300", "400", "500"],
   variable: "--dm-mono",
 });
- 
