@@ -62,7 +62,8 @@ const StrategySection = () => {
       <div className="max-w-[1536px] relative mx-auto md:px-[100px] px-[24px] md:py-[150px] py-[60px] flex lg:flex-row flex-col justify-between">
         <img
           className="absolute z-[0] top-[68%] lg:block hidden left-[118px] scale-[1.05] -translate-y-1/2 "
-          src="/assets/decoration-text.svg"
+          src="/assets/decoration/decoration-text.svg"
+          alt="decoration-text"
         />
         <div>
           <div>
@@ -83,14 +84,14 @@ const StrategySection = () => {
             asChild
             className="bg-white text-[16px] mt-[38px] text-black hover:bg-white/90 text-lg font-semibold rounded-[4px] px-[18px] py-[24px]"
           >
-            <Link href="/contact" className="flex items-center gap-2">
+            <Link href="/contact" className="flex items-center group gap-2">
               Contact Us
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 group-hover:opacity-100 opacity-60 transition-all" />
             </Link>
           </Button>
         </div>
         <div className="lg:w-[600px] lg:pt-[0px] pt-[50px] w-full ">
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[40px] gap-[30px] w-fit  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[60px] gap-[30px] w-fit  ">
             {strategies.map((strategy, index) => (
               <StrategyCard
                 key={index}

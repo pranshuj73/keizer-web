@@ -34,12 +34,12 @@ const FooterSection = () => {
           <div className="space-y-8 lg:space-y-0 lg:flex lg:space-x-[64px]">
             <div>
               <h3 className="text-[20px] mb-3 font-semibold">Navigate</h3>
-              <ul className="md:space-y-[16px] space-y-[12px]">
+              <ul className="md:space-y-[10px] space-y-[12px]">
                 {navigationLinks.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="hover:text-neutral-300 transition-colors"
+                      className="hover:text-neutral-400 active:text-neutral-600 transition-colors"
                     >
                       {link.label}
                     </a>
@@ -49,14 +49,14 @@ const FooterSection = () => {
             </div>
             <div>
               <h3 className="text-[20px] mb-3 font-semibold">Socials</h3>
-              <ul className="space-y-[16px]">
+              <ul className="space-y-[10px]">
                 {socialLinks.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-neutral-300 transition-colors"
+                      className="hover:text-neutral-400  active:text-neutral-600 transition-colors"
                     >
                       {link.label}
                     </a>
@@ -67,7 +67,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="h-[35px] flex items-center font-bold justify-center text-black bg-white text-center">
+      <div className="h-[35px] flex items-center font-semibold justify-center text-white bg-[#2d2dc3] text-center">
         © keizerworks 2024 All rights reserved
       </div>
     </footer>

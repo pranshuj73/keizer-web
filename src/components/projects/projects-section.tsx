@@ -4,7 +4,6 @@ import Link from "next/link";
 interface Project {
   title: string;
   categories: string[];
-  image: string;
   href: string;
   className?: string;
 }
@@ -14,57 +13,46 @@ const ProjectSection = () => {
     {
       title: "Gold Rush",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-2 md:row-span-2",
     },
     {
       title: "Statistics Mobile App",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-1 md:row-span-2",
     },
     {
       title: "Plastic Credit Card",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Diseño de Moda",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Dinámica Lifestyle",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Captive Bright Utensil",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-1 md:row-span-1",
     },
     {
       title: "Fitness Lifestyle Mobile App",
       categories: ["Stories", "Branding"],
-      image: "/project-1.png",
       href: "#",
       className: "md:col-span-2 md:row-span-1",
     },
   ];
-
-  /*
-  Note: Some projects mentioned here are just shown for placeholder images, we will change them later with our keizer actual projects later.
-  */
 
   return (
     <section id="ourprojects" className="bg-white text-black project-keizer">
@@ -94,7 +82,7 @@ const ProjectSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid pt-[60px] grid-cols-1 md:grid-cols-3 gap-[40px] py-8">
+        <div className="grid pt-[60px] grid-cols-1 md:grid-cols-3 gap-[30px] py-8">
           {projects.map((project, index) => (
             <Link
               key={project.title}
@@ -102,7 +90,7 @@ const ProjectSection = () => {
               className={`group relative  h-[220px] sm:h-[280px] md:h-[422px] overflow-hidden rounded-[5px] ${project.className}`}
             >
               <Image
-                src={`/assets/project-${index + 1}.png`}
+                src={`/assets/project/project-${index + 1}.webp`}
                 alt={project.title}
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 width={400}
