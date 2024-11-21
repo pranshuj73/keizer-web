@@ -13,6 +13,7 @@ const ClientSection = () => {
             <span className="hidden md:inline-block">for</span> the long run.
           </h2>
         </div>
+
         <div className="md:w-[640px] w-full md:text-[20px] mt-[24px]  md:leading-[24px] leading-[18px] md:mt-0 text-[15px]">
           <p>
             While creating inspiring places for people, product team which&nbsp;

@@ -62,6 +62,7 @@ const ProjectSection = () => {
             <p className="uppercase text-[16px] pb-[10px] font-semibold">
               Our clients
             </p>
+
             <h2 className="md:text-[54px] text-[32px] font-bold leading-[100%]">
               We’re going to
               <br />
@@ -71,17 +72,21 @@ const ProjectSection = () => {
               <span className="hidden md:inline-block">for</span> the long run.
             </h2>
           </div>
+
           <div className="md:w-[640px] w-full md:text-[20px] mt-[24px] md:leading-[24px] leading-[18px] md:mt-0 text-[15px]">
             <p>
               While creating inspiring places for people, product team
               which&nbsp;
               <span className="font-bold">creates amazing UI/UX </span>{" "}
               experiences,
-              <span className="font-bold">&nbsp;by crafting top-notch</span>{" "}
+              <span className="font-bold">
+                &nbsp;by crafting top-notch
+              </span>{" "}
               user experience.
             </p>
           </div>
         </div>
+
         <div className="grid pt-[60px] grid-cols-1 md:grid-cols-3 gap-[30px] py-8">
           {projects.map((project, index) => (
             <Link
@@ -97,12 +102,14 @@ const ProjectSection = () => {
                 height={400}
                 unoptimized
               />
+
               <div className="absolute bottom-0 left-0 right-0 h-[50%] opacity-60 w-full bg-gradient-to-t from-black to-transparent" />
 
               <div className="absolute inset-0 z-20 flex flex-col justify-end p-[20px] md:p-[40px]">
                 <h3 className="text-xl font-medium text-zinc-100 md:text-2xl">
                   {project.title}
                 </h3>
+
                 <p className="mt-[5px] text-sm text-zinc-300">
                   {project.categories.join(", ")}
                 </p>

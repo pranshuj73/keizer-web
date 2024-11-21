@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "dm-mono": ["var(--dm-mono)"],
-        "space-grotesk": ["var(--space-grotesk)"],
+        sans: ["var(--font-space-grotesk)"],
+        mono: ["var(--font-dm-mono)"],
       },
       perspective: {
         "1000": "1000px",

@@ -9,23 +9,27 @@ const AboutSection = () => {
               We save <br />
               businesses <br /> from ugly <br /> & ineffective.
             </span>
+
             <img
               src="/assets/decoration/paint-brush.svg"
               className="absolute bottom-0 xl:w-auto w-[80%] translate-y-[40%] z-0"
               alt="paint-decoration"
             />
           </h2>
+
           <img
             className="absolute xl:block hidden top-0 right-0"
             src="/assets/decoration/keizer-grid.svg"
             alt="keizer-grid"
           />
         </header>
+
         <img
           className="w-full mt-[70px] xl:hidden block"
           src="/assets/decoration/keizer-grid.svg"
           alt="keizer-grid"
         />
+
         <div className="xl:mt-[200px] mt-[33px] md:text-[20px] text-[15px]">
           <p>
             We help your startup grow by leveraging smart marketing strategies

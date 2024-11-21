@@ -12,15 +12,17 @@ const NewsLetter = () => {
           <br className="lg:block md:hidden block" />
           to keep up to date with us
         </p>
+
         <div className="items-center flex gap-[10px]">
           <div className="relative">
             <input
               className="bg-black md:w-auto w-[200px] relative py-[14px] pl-[50px] pr-[24px] text-white border-white/20 rounded-full focus:outline-none outline-none border"
               type="text"
               placeholder="Enter your email."
-            ></input>
+            />
             <UserRound className="absolute text-white/60 h-[15px] top-[50%] left-[24px] -translate-y-1/2" />
           </div>
+
           <button className="text-[14px] py-[14px] px-[28px] rounded-full bg-[#2D2DC3] hover:bg-[#2d2dc3]/50 transition-all active:bg-[#2d2dc3]/30">
             Subscribe
           </button>
