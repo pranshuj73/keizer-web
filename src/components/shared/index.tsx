@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { cn } from "~/src/lib/utils";
-import { DM_Mono } from "next/font/google";
-const dM_Mono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-});
 
 const NavLink = ({
   linkName,
   index,
   className,
-}: { linkName: string; index?: number; className?: string }) => {
+}: {
+  linkName: string;
+  index?: number;
+  className?: string;
+}) => {
   return (
     <Link
-      className={`${dM_Mono.className} group tracking-[-1%] relative text-nowrap ${cn(className)}`}
+      className={cn(
+        "font-mono group tracking-[-1%] relative text-nowrap",
+        className,
+      )}
       href={`#${linkName.split(" ").join("").toLowerCase()}`}
     >
       {index !== undefined && (

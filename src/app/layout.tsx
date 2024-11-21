@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import type { ReactNode } from "react";
 import Navbar from "~/src/components/ui/navbar";
-import { space_Grotesk } from "~/src/components/ui/font";
+import { dmMono, spaceGrotesk } from "~/src/config/font";
 
 export const metadata: Metadata = {
   title: "keizer",
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${space_Grotesk.className} antialiased dark bg-black`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${dmMono.variable}`}>
+      <body className="font-sans antialiased dark bg-background">
         <Navbar />
         {children}
       </body>

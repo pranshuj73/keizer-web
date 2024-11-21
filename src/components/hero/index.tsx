@@ -1,11 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { dM_Mono } from "../ui/font";
 
 const HeroSection = () => {
   return (
-    <section
+    <main
       id="hero"
       className="h-auto pb-[100px] overflow-hidden relative w-full bg-primary"
     >
@@ -33,6 +32,7 @@ const HeroSection = () => {
                 aria-hidden="true"
               />
             </div>
+
             <div className="md:absolute  p-[20px] md:top-[50%] md:-translate-y-1/2 md:right-[10px] lg:right-[190px]">
               <h1
                 data-duration="1"
@@ -51,13 +51,13 @@ const HeroSection = () => {
                 <br className="md:hidden block" />
                 Digital platforms
               </h1>
-              <p
-                className={`mt-[35px] fade-in-blur-1 translate-y-2 ${dM_Mono.className} [word-spacing:4px] tracking-[-99%] font-[400] opacity-65 lg:leading-[30px] md:leading-[18px] leading-[20px] lg:text-[19px] md:text-[17px] text-[15px] md:w-[500px] lg:w-[800px]`}
-              >
+
+              <p className="mt-[35px] fade-in-blur-1 translate-y-2 font-mono [word-spacing:4px] tracking-[-99%] font-[400] opacity-65 lg:leading-[30px] md:leading-[18px] leading-[20px] lg:text-[19px] md:text-[17px] text-[15px] md:w-[500px] lg:w-[800px]">
                 From stunning websites to immersive games and motion graphics,
                 we bring your vision to life with cutting-edge design and
                 development.
               </p>
+
               <Link
                 href="#contact"
                 className="pt-[30px] md:translate-y-4 fade-in-blur-2 md:text-[17.8px] text-[14px] inline-block group border-b-2 border-white pb-[6px]"
@@ -69,13 +69,15 @@ const HeroSection = () => {
                 />
               </Link>
             </div>
+
             <div className="w-fit px-[20px] relative pt-[27.5px] md:hidden block">
               <div className="w-full h-auto z-10 relative ">
                 <img
-                  className="absolute  z-[-1] bottom-0 translate-y-[70%]"
+                  className="absolute z-[-1] bottom-0 translate-y-[70%]"
                   src="/assets/decoration/decoration-text.svg"
                   alt="decoration"
                 />
+
                 <Image
                   src="/assets/keizer-hero-image.webp"
                   height={560}
@@ -95,7 +97,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
