@@ -33,10 +33,10 @@ const HeroSection = () => {
               />
             </div>
 
-            <div className="md:absolute  p-[20px] md:top-[50%] md:-translate-y-1/2 md:right-[10px] lg:right-[190px]">
+            <div className="md:absolute p-[20px] md:top-[50%] md:-translate-y-1/2 md:right-[10px] lg:right-[190px]">
               <h1
                 data-duration="1"
-                className="lg:text-[98px] fade-in-blur-0 md:text-[78px] text-[40px] md:ml-[8px] group translate-y-1 font-[700] md:leading-[75px] lg:leading-[98px] leading-[45px] tracking-[102%] capitalize"
+                className="lg:text-8xl fade-in-blur-0 md:text-6xl sm:text-5xl text-4xl md:ml-[8px] group translate-y-1 font-bold leading-tight capitalize"
               >
                 Unleashing
                 <br className="md:hidden block" />
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 Digital platforms
               </h1>
 
-              <p className="mt-[35px] fade-in-blur-1 translate-y-2 font-mono [word-spacing:4px] tracking-[-99%] font-[400] opacity-65 lg:leading-[30px] md:leading-[18px] leading-[20px] lg:text-[19px] md:text-[17px] text-[15px] md:w-[500px] lg:w-[800px]">
+              <p className="mt-[35px] fade-in-blur-1 translate-y-2 font-mono [word-spacing:4px] font-normal opacity-65 lg:leading-[30px] md:leading-[18px] leading-[20px] lg:text-[19px] md:text-[17px] text-[15px] md:w-[500px] lg:w-[800px]">
                 From stunning websites to immersive games and motion graphics,
                 we bring your vision to life with cutting-edge design and
                 development.
