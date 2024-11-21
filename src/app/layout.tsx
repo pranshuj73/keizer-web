@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import type { ReactNode } from "react";
-import Navbar from "~/src/components/ui/navbar";
-import { dmMono, spaceGrotesk } from "~/src/config/font";
+import Navbar from "~/components/ui/navbar";
+import { dmMono, spaceGrotesk } from "~/config/font";
 
 export const metadata: Metadata = {
   title: "keizer",

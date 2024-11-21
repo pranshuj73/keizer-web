@@ -10,20 +10,16 @@
     "lint": "pnpm biome lint --write ."
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.1.7",
+    "@next/bundle-analyzer": "^15.0.3",
     "@radix-ui/react-dialog": "^1.1.2",
-    "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@tabler/icons-react": "^3.21.0",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
-    "framer-motion": "11.11.10",
     "lucide-react": "^0.454.0",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "react-intersection-observer": "^9.13.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
