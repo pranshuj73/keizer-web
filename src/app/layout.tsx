@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import type { ReactNode } from "react";
-import Navbar from "~/src/components/ui/navbar";
-import { dmMono, spaceGrotesk } from "~/src/config/font";
+import Navbar from "~/components/ui/navbar";
+import { dmMono, spaceGrotesk } from "~/config/font";
+import FooterSection from "~/components/footer";
 
 export const metadata: Metadata = {
   title: "keizer",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className="font-sans antialiased dark bg-background">
         <Navbar />
         {children}
+        <FooterSection />
       </body>
     </html>
   );

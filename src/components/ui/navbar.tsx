@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavLink from "../shared";
-import { Button } from "~/src/components/ui/button";
+import { Button } from "~/components/ui/button";
 import { AlignJustify } from "lucide-react";
-import { cn } from "~/src/lib/utils";
+import { cn } from "~/lib/utils";
 import Link from "next/link";
 
 const Navbar = () => {
