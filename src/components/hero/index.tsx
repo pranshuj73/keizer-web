@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <main
+    <div
       id="hero"
       className="h-auto pb-[100px] overflow-hidden relative w-full bg-primary"
     >
@@ -97,7 +97,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
