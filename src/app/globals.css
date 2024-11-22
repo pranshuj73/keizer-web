@@ -26,6 +26,10 @@ html {
   background-color: rgb(78, 78, 78);
 }
 
+.flex-center {
+  @apply items-center justify-center
+}
+
 .dot-grid {
   inset: 0;
   height: 100%;
@@ -89,6 +93,10 @@ html {
   transform: translateX(-50px);
   filter: blur(10px);
   animation: fadeInBlurLeft 1.3s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+
+.smooth-transition {
+  transition: 0.3s all cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 @keyframes fadeInBlur {

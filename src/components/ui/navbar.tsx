@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavLink from "../shared";
-import { Button } from "~/components/ui/button";
 import { AlignJustify } from "lucide-react";
 import { cn } from "~/lib/utils";
 import Link from "next/link";
@@ -30,7 +29,7 @@ const Navbar = () => {
     <>
       <div
         className={cn(
-          "inset-0 transition-all z-[500] md:hidden px-[24px] py-[100px] block bg-black/80 backdrop-blur-md fixed",
+          "inset-0 smooth-transition z-[500] md:hidden px-[24px] py-[100px] block bg-black/80 backdrop-blur-md fixed",
           openSideBar ? "translate-x-0" : "-translate-x-full",
         )}
       >
@@ -59,15 +58,16 @@ const Navbar = () => {
 
       <nav
         className={cn(
-          "w-full text-white bg-black/50 fixed z-[1000] top-0 flex justify-between items-center lg:px-[40px] px-[20px] transition-a duration-300 ease-in-out",
+          `w-full text-white ${openSideBar ? "bg-transparent" : "bg-black/50"} fixed z-[1000] top-0 flex justify-between items-center lg:px-[40px] px-[20px] transition-a duration-300 ease-in-out`,
           visible
-            ? "md:h-[130px] h-[80px] md:backdrop-blur-none backdrop-blur-md"
-            : "md:h-[80px] h-[80px] backdrop-blur-md bg-black/15",
+            ? `md:h-[130px] h-[80px] md:backdrop-blur-none ${openSideBar ? "backdrop-blur-none bg-transparent" : "backdrop-blur-md "}`
+            : `md:h-[80px] h-[80px] ${openSideBar ? "bg-transparent" : "bg-black/15  backdrop-blur-md "}`,
         )}
       >
         <div className="max-w-[1440px] w-full flex justify-between items-center mx-auto">
-          <div className="flex fade-in-blur-left-0  items-center gap-[5px]">
+          <div className="flex fade-in-blur-left-0 cursor-pointer items-center gap-[5px]">
             <AlignJustify
+              type="button"
               onClick={() => setOpenSideBar((prev) => !prev)}
               className="md:hidden block"
               fontWeight={900}
@@ -102,9 +102,12 @@ const Navbar = () => {
               })}
             </ul>
 
-            <Button className="font-sans bg-white hover:bg-neutral-300 text-black w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]">
+            <Link
+              href="#contact"
+              className="font-sans flex flex-center bg-white hover:bg-neutral-300 text-black w-[102px] h-[36px] font-[700] text-[16px] rounded-[4px]"
+            >
               Let's talk
-            </Button>
+            </Link>
           </div>
         </div>
       </nav>
