@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface StrategyCardProps {
   number: string;
+  label: string;
   title: string;
   description: string;
   linkText?: string;
@@ -11,6 +12,7 @@ interface StrategyCardProps {
 
 const StrategyCard = ({
   number,
+  label,
   title,
   description,
   linkText = "Read More",
@@ -19,7 +21,7 @@ const StrategyCard = ({
   return (
     <div className="relative md:w-[284px] w-full mx-auto flex flex-col justify-between">
       <span className="text-white/80 text-[14px] pb-[20px] font-medium border-b border-neutral-600 tracking-wide">
-        {number}. STRATEGY
+        {number}. {label}
       </span>
 
       <div className="space-y-6 pt-[20px]">
@@ -51,6 +53,7 @@ export function Example() {
     <div className="bg-black min-h-screen p-8 md:p-12">
       <StrategyCard
         number="1"
+        label="Strategy"
         title="Brand Strategy & Art Direction"
         description="Creating a higher spacing and how people move through a unique and impactful campaign."
         linkText="Read More"

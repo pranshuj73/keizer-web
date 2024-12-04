@@ -28,8 +28,8 @@ const FooterSection = () => {
               alt="keizer-brand-logo"
               className="md:translate-x-0 translate-x-[-15px]"
             />
-            <p className="max-w-[300px] text-neutral-400 mt-4">
-              We growing up your business with personal AI manager.
+            <p className="max-w-[350px] text-neutral-400 mt-4">
+              Empowering Visionaries, Scaling Ambitions.
             </p>
           </div>
 
