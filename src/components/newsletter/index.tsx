@@ -8,9 +8,9 @@ const NewsLetter = () => {
     >
       <div className="flex border-b border-neutral-600 md:pb-[100px] pb-[60px] md:flex-row flex-col gap-[24px] lg:items-center items-start justify-between max-w-[1536px] mx-auto">
         <p className="text-[24px] leading-[100%] font-bold">
-          Join our newsletter to keep{" "}
+          Join our newsletter{" "}
           <br className="lg:block md:hidden block" />
-          to keep up to date with us
+          to stay up to date with us
         </p>
 
         <div className="items-center flex gap-[10px]">

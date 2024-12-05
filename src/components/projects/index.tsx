@@ -66,7 +66,7 @@ const ProjectSection = () => {
             <h2 className="md:text-[54px] text-[32px] font-bold leading-[100%]">
               We’re going to
               <br />
-              became partners
+              be partners
               <span className="inline-block md:hidden">&nbsp;for</span>
               <br />
               <span className="hidden md:inline-block">for</span> the long run.
@@ -75,14 +75,13 @@ const ProjectSection = () => {
 
           <div className="md:w-[640px] w-full md:text-[20px] mt-[24px] md:leading-[24px] leading-[18px] md:mt-0 text-[15px]">
             <p>
-              While creating inspiring places for people, product team
-              which&nbsp;
-              <span className="font-bold">creates amazing UI/UX </span>{" "}
-              experiences,
+              Through innovative design and technology, we&nbsp;
+              <span className="font-bold">deliver exceptional solutions </span>{" "}
+              tailored to
               <span className="font-bold">
-                &nbsp;by crafting top-notch
+                &nbsp;create impactful experiences
               </span>{" "}
-              user experience.
+              that last a lifetime.
             </p>
           </div>
         </div>

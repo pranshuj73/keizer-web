@@ -6,6 +6,7 @@ import StrategyCard from "./strategy-card";
 const strategies = [
   {
     number: "1",
+    label: "BRAND BUILDING",
     title: "Brand Strategy & Art Direction",
     description:
       "Creating a higher spacing and how people move through a unique and impactful campaign.",
@@ -13,6 +14,7 @@ const strategies = [
   },
   {
     number: "2",
+    label: "ONLINE GROWTH",
     title: "Digital Marketing and SEO",
     description:
       "Leveraging cutting-edge digital techniques to increase your online presence and drive organic growth.",
@@ -20,6 +22,7 @@ const strategies = [
   },
   {
     number: "3",
+    label: "STORYTELLING",
     title: "Content Creation & Storytelling",
     description:
       "Crafting compelling narratives that resonate with your audience and strengthen your brand identity.",
@@ -27,6 +30,7 @@ const strategies = [
   },
   {
     number: "4",
+    label: "DESIGN EXCELLENCE",
     title: "User Experience & Interface Design",
     description:
       "Designing intuitive and engaging user experiences that delight your customers and boost conversion rates.",
@@ -34,6 +38,7 @@ const strategies = [
   },
   {
     number: "5",
+    label: "TECHNICAL INNOVATION",
     title: "Software Architecture & Scalability",
     description:
       "Developing robust, scalable software solutions tailored to meet the demands of growing businesses and complex systems.",
@@ -41,6 +46,7 @@ const strategies = [
   },
   {
     number: "6",
+    label: "SMART SOLUTIONS",
     title: "AI & Machine Learning Integration",
     description:
       "Implementing AI-driven solutions to enhance decision-making, automate processes, and unlock new capabilities within your applications.",
@@ -100,6 +106,7 @@ const StrategySection = () => {
             {strategies.map((strategy, index) => (
               <StrategyCard
                 key={index}
+                label={strategy.label}
                 number={strategy.number}
                 title={strategy.title}
                 description={strategy.description}

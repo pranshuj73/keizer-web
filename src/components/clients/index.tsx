@@ -7,7 +7,7 @@ const ClientSection = () => {
           <h2 className="md:text-[54px] text-[32px] font-bold leading-[100%]">
             We’re going to
             <br />
-            became partners
+            be partners
             <span className="inline-block md:hidden">&nbsp;for</span>
             <br />
             <span className="hidden md:inline-block">for</span> the long run.
