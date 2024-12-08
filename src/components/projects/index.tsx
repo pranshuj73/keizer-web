@@ -11,45 +11,45 @@ interface Project {
 const ProjectSection = () => {
   const projects: Project[] = [
     {
-      title: "Gold Rush",
-      categories: ["Stories", "Branding"],
-      href: "#",
+      title: "Invoicen",
+      categories: ["SAAS"],
+      href: "https://invoicen.keizerworks.com/",
       className: "md:col-span-2 md:row-span-2",
     },
     {
-      title: "Statistics Mobile App",
-      categories: ["Stories", "Branding"],
-      href: "#",
+      title: "Keizer Auth",
+      categories: ["SAAS"],
+      href: "https://github.com/keizerworks/keizer-auth",
       className: "md:col-span-1 md:row-span-2",
     },
     {
       title: "Plastic Credit Card",
       categories: ["Stories", "Branding"],
       href: "#",
-      className: "md:col-span-1 md:row-span-1",
+      className: "hidden md:col-span-1 md:row-span-1",
     },
     {
       title: "Diseño de Moda",
       categories: ["Stories", "Branding"],
       href: "#",
-      className: "md:col-span-1 md:row-span-1",
+      className: "hidden md:col-span-1 md:row-span-1",
     },
     {
       title: "Dinámica Lifestyle",
       categories: ["Stories", "Branding"],
       href: "#",
+      className: "hidden md:col-span-1 md:row-span-1",
+    },
+    {
+      title: "Uni DAO",
+      categories: ["Metaverse", "DAO"],
+      href: "https://youtu.be/idODK_SqBSg",
       className: "md:col-span-1 md:row-span-1",
     },
     {
-      title: "Captive Bright Utensil",
-      categories: ["Stories", "Branding"],
-      href: "#",
-      className: "md:col-span-1 md:row-span-1",
-    },
-    {
-      title: "Fitness Lifestyle Mobile App",
-      categories: ["Stories", "Branding"],
-      href: "#",
+      title: "Knight Fall",
+      categories: ["Gaming", "Blockchain"],
+      href: "http://knight-fall.vercel.app/",
       className: "md:col-span-2 md:row-span-1",
     },
   ];
@@ -91,6 +91,7 @@ const ProjectSection = () => {
             <Link
               key={project.title}
               href={project.href}
+              target="_blank"
               className={`group relative  h-[220px] sm:h-[280px] md:h-[422px] overflow-hidden rounded-[5px] ${project.className}`}
             >
               <Image

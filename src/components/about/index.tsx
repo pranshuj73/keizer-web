@@ -7,7 +7,7 @@ const AboutSection = () => {
           <h2 className="relative sm:pt-[0px] pt-[10px] lg:text-[96px] z-50 md:text-[70px] text-[56px] lg:leading-[120px] md:leading-[80px] leading-[60px] font-bold  ">
             <span className="relative z-10">
               We save <br />
-              businesses <br /> from the ugly <br /> & ineffective.
+              businesses <br /> from ineffective <br /> & ugly designs.
             </span>
 
             <img
